@@ -28,7 +28,7 @@ const ContactForm = () => {
     setStatus('Enviando...');
 
     try {
-      const response = await fetch("https://formsubmit.co/bbf2a3ab8fc07d99d480fa8fe20b6cfa", {
+      const response = await fetch("https://formsubmit.co/rody216@gmail.com", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -126,14 +126,12 @@ const ContactForm = () => {
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" />
 
-              <h3 className="text-3xl font-semibold text-[#FFD700] mb-6">Solicitar una Consulta.</h3>
+              <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">Solicitar una Consulta.</h3>
 
               <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Tu nombre" required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]" />
 
               <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="tu.correo@ejemplo.com" required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]" />
-
-              <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Motivo de tu consulta" required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]" />
-
+             
               <select name="service" value={formData.service} onChange={handleChange} required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]">
                 <option value="" disabled>Seleccione un servicio</option>
                 {servicesOptions.map((s, i) => <option key={i} value={s}>{s}</option>)}
