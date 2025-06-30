@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/eveliobustos/static/css/main.855c91e4.css",
+    "main.js": "/eveliobustos/static/js/main.c289c031.js",
+    "static/media/profile.png": "/eveliobustos/static/media/profile.ae74b976541d04ae0163.png",
+    "static/media/avatar2.jpg": "/eveliobustos/static/media/avatar2.73722671e6ca0b3aaf09.jpg",
+    "static/media/avatar6.jpg": "/eveliobustos/static/media/avatar6.73722671e6ca0b3aaf09.jpg",
+    "static/media/logo.png": "/eveliobustos/static/media/logo.6126bd0ceeae9d312a28.png",
+    "static/media/avatar4.jpg": "/eveliobustos/static/media/avatar4.ec94e418d62ec1fe8282.jpg",
+    "index.html": "/eveliobustos/index.html",
+    "main.855c91e4.css.map": "/eveliobustos/static/css/main.855c91e4.css.map",
+    "main.c289c031.js.map": "/eveliobustos/static/js/main.c289c031.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.855c91e4.css",
+    "static/js/main.c289c031.js"
+  ]
+}
