@@ -11,9 +11,14 @@ const HomeHero = ({ onNavigate }) => {
         <p className="text-lg md:text-xl lg:text-2xl mb-4 max-w-3xl mx-auto animate-fade-in-up animation-delay-200 text-[#FFD700]">
           Contador Público - Revisor Fiscal
         </p>
+      
         <p className="text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto animate-fade-in-up animation-delay-300">
-          Ética, Calidad y Compromiso: Tu socio estratégico en contaduría para el éxito financiero.
+          Tu socio estratégico en contaduría para el éxito financiero.
         </p>
+        <p className="text-2xl md:text-4xl lg:text-5xl mb-14 max-w-3xl mx-auto animate-fade-in-up animation-delay-200 text-[#FFD700]">
+          Ética, Calidad y Compromiso.
+        </p>
+
         <button
           onClick={() => onNavigate('contacto')}
           className="bg-[#FFD700] text-black px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-white transition-all duration-300 transform hover:scale-105 animate-fade-in-up animation-delay-400"
