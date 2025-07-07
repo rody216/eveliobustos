@@ -28,7 +28,7 @@ const AboutMeSection = () => {
             </p>
             <h3 className="text-3xl font-semibold text-[#FFD700] mb-4">Nuestra Visión</h3>
             <p className="text-lg leading-relaxed">
-              Ser el despacho contable de referencia en México, reconocido por la excelencia en el servicio, la innovación en soluciones y el impacto positivo en la economía de nuestros clientes.
+              Ser el despacho contable de referencia en Colombia, reconocido por la excelencia en el servicio, la innovación en soluciones y el impacto positivo en la economía de nuestros clientes.
             </p>
           </div>
         </div>

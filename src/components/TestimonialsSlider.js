@@ -24,7 +24,7 @@ const testimonials = [
     avatar: avatar3
   },
   {
-    quote: "La atención personalizada que recibimos de Evelio Bustos Apache es incomparable. Se toman el tiempo para entender nuestras necesidades específicas y nos ofrecen soluciones a medida que realmente funcionan. Su equipo es sumamente competente y siempre están un paso adelante en las actualizaciones fiscales. Es un placer trabajar con profesionales de este calibre.",
+    quote: "La atención personalizada que recibimos de Evelio Bustos Apache es incomparable. Se toman el tiempo para entender nuestras necesidades específicas y nos ofrece soluciones a medida que realmente funcionan. Su equipo es sumamente competente y siempre están un paso adelante en las actualizaciones fiscales. Es un placer trabajar con profesionales de este calibre.",
     author: "Roberto L. - Gerente General",
     avatar: avatar4
   },
