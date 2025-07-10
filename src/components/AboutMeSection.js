@@ -18,11 +18,11 @@ const AboutMeSection = () => {
         <p className="text-lg leading-relaxed mb-6">
           Soy Evelio Bustos Apache, contador público con más de 15 años de experiencia brindando soluciones contables, fiscales y financieras de alta calidad a empresas y emprendedores. Me especializo en revisoría fiscal, contraloría y auditorías, con un enfoque en el cumplimiento normativo, la transparencia y el crecimiento sostenible de mis clientes.
 
-          Entre mis estudios realizados, soy Especialista en Revisoría Fiscal y Contraloría, Contador Público de la Corporación Universitaria Remington, Tengo un Diplomado en Contratación Pública, con la corporacion Delphy Colombia, soy Auditor Interno en Sistemas Integrados de Gestión con el SENA y Formación en Contratación Estatal, Control Interno e Inspector Militar, con el Ejército Nacional de Colombia.
+          Entre los estudios que he realizado, soy Especialista en Revisoría Fiscal y Contraloría, Contador Público de la Corporación Universitaria Remington, Tengo un Diplomado en Contratación Pública, con la corporacion Delphy Colombia, soy Auditor Interno en Sistemas Integrados de Gestión con el SENA y Formación en Contratación Estatal, Control Interno e Inspector Militar, con el Ejército Nacional de Colombia.
         </p>
 
         <p className="text-lg leading-relaxed mb-6">
-          Entre los estudios que he realizado, me especializo en Revisoría Fiscal y Contraloría, Contador Público de la Corporación Universitaria Remington, con un Diplomado en Contratación Pública de la Corporación Delphy Colombia. Además, es Auditor Interno en Sistemas Integrados de Gestión con el SENA y cuenta con formación en Contratación Estatal, Control Interno e Inspector Militar del Ejército Nacional de Colombia.
+          Entre los estudios que he realizado, me especializo en Revisoría Fiscal y Contraloría, Contador Público de la Corporación Universitaria Remington, con un Diplomado en Contratación Pública de la Corporación Delphy Colombia. Además, soy Auditor Interno en Sistemas Integrados de Gestión con el SENA y cuento con formación en Contratación Estatal, Control Interno e Inspector Militar del Ejército Nacional de Colombia.
         </p>
 
         <h3 className="text-3xl font-semibold text-[#FFD700] mb-4">Nuestra Misión</h3>
