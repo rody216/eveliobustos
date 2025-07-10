@@ -22,7 +22,7 @@ const AboutMeSection = () => {
         </p>
 
         <p className="text-lg leading-relaxed mb-6">
-          Entre sus estudios realizados, es Especialista en Revisoría Fiscal y Contraloría, Contador Público de la Corporación Universitaria Remington, con un Diplomado en Contratación Pública de la Corporación Delphy Colombia. Además, es Auditor Interno en Sistemas Integrados de Gestión con el SENA y cuenta con formación en Contratación Estatal, Control Interno e Inspector Militar del Ejército Nacional de Colombia.
+          Entre los estudios que he realizado, me especializo en Revisoría Fiscal y Contraloría, Contador Público de la Corporación Universitaria Remington, con un Diplomado en Contratación Pública de la Corporación Delphy Colombia. Además, es Auditor Interno en Sistemas Integrados de Gestión con el SENA y cuenta con formación en Contratación Estatal, Control Interno e Inspector Militar del Ejército Nacional de Colombia.
         </p>
 
         <h3 className="text-3xl font-semibold text-[#FFD700] mb-4">Nuestra Misión</h3>
