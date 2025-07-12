@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Gracias por tu mensaje!</title>
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-black text-white flex flex-col justify-center items-center min-h-screen text-center px-6">
+  <div class="max-w-xl fade-in-up">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/3159/3159066.png"
+      alt="Mensaje enviado"
+      class="w-32 h-32 mx-auto mb-6 animate-bounce"
+    />
+
+    <h1 class="text-4xl md:text-5xl font-bold text-[#FFD700] mb-4">¡Gracias por tu mensaje!</h1>
+
+    <p class="text-xl text-gray-300 mb-10">
+      Hemos recibido tu consulta y pronto nos pondremos en contacto contigo.
+    </p>
+
+    <a
+      href="/eveliobustos/"
+      class="bg-[#FFD700] text-black font-semibold px-6 py-3 rounded-xl hover:bg-white transition duration-300 transform hover:scale-105"
+    >
+      Volver al inicio
+    </a>
+  </div>
+</body>
+</html>
