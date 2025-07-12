@@ -16,9 +16,7 @@ const AboutMeSection = () => {
       </div>
       <div className="lg:w-1/2 text-gray-300 text-justify">
         <p className="text-lg leading-relaxed mb-6">
-          Soy Evelio Bustos Apache, contador público con más de 15 años de experiencia brindando soluciones contables, fiscales y financieras de alta calidad a empresas y emprendedores. Me especializo en revisoría fiscal, contraloría y auditorías, con un enfoque en el cumplimiento normativo, la transparencia y el crecimiento sostenible de mis clientes.
-
-          Entre los estudios que he realizado, soy Especialista en Revisoría Fiscal y Contraloría, Contador Público de la Corporación Universitaria Remington, Tengo un Diplomado en Contratación Pública, con la corporacion Delphy Colombia, soy Auditor Interno en Sistemas Integrados de Gestión con el SENA y Formación en Contratación Estatal, Control Interno e Inspector Militar, con el Ejército Nacional de Colombia.
+          Soy Evelio Bustos Apache, contador público con más de 15 años de experiencia brindando soluciones contables, fiscales y financieras de alta calidad a empresas y emprendedores. Me especializo en revisoría fiscal, contraloría y auditorías, con un enfoque en el cumplimiento normativo, la transparencia y el crecimiento sostenible de mis clientes.          
         </p>
 
         <p className="text-lg leading-relaxed mb-6">
