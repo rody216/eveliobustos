@@ -62,28 +62,80 @@ const ContactForm = () => {
             <div>
               <h3 className="text-3xl font-semibold text-[#FFD700] mb-6">Información de Contacto</h3>
               <div className="space-y-4 text-gray-300">
-                <p className="flex items-center text-lg">
-                  <svg className="w-6 h-6 mr-3 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
-                  </svg>
-                  <a href="tel:+573103704356" className="hover:text-white transition-colors">+57 310 3704356</a>
+                <p className="mb-2">
+                  <a
+                    href="tel:+573103704356"
+                    className="flex items-center justify-center md:justify-start text-white hover:text-[#FFD700] transition-colors group"
+                  >
+                    <svg
+                      className="w-6 h-6 mr-3 text-[#FFD700] group-hover:scale-110 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+                      />
+                    </svg>
+                    +57 310 3704356
+                  </a>
                 </p>
-                <p className="flex items-center text-lg">
-                  <svg className="w-6 h-6 mr-3 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-2 2m20-2l2 2" />
-                  </svg>
-                  <a href="mailto:eveliobustos@gmail.com" className="hover:text-white transition-colors">eveliobustos@gmail.com</a>
+
+                <p className="mb-2">
+                  <a
+                    href="mailto:eveliobustos@gmail.com"
+                    className="flex items-center justify-center md:justify-start text-white hover:text-[#FFD700] transition-colors group"
+                  >
+                    <svg
+                      className="w-6 h-6 mr-3 text-[#FFD700] group-hover:scale-110 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-2 2m20-2l2 2"
+                      />
+                    </svg>
+                    eveliobustos@gmail.com
+                  </a>
                 </p>
-                {/* <p className="flex items-start text-lg">
-                  <svg className="w-6 h-6 mr-3 text-[#FFD700] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>
-                    Calle 138 No. 55-38, Oficina Finanzas<br />
-                    Bogotá, Colombia
-                  </span>
-                </p> */}
+
+                <p className="mb-2">
+  <a
+    href="https://www.google.com/maps/place/Cra.+74+%23163-40,+Bogot%C3%A1,+Colombia"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center md:justify-start text-white hover:text-[#FFD700] transition-colors group"
+  >
+    <svg
+      className="w-6 h-6 mr-3 text-[#FFD700] mt-1 group-hover:scale-110 transition-transform"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+      />
+    </svg>
+    Cra. 74 Nr 163 - 40, Suba - Bogotá, Colombia
+  </a>
+</p>
+
               </div>
             </div>
 
@@ -105,7 +157,7 @@ const ContactForm = () => {
     </a>
 
     {/* Instagram */}
-    <a href="https://instagram.com" className="text-[#FFD700] hover:text-[#E4405F] transition-colors transform hover:scale-125" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <a href="https://www.instagram.com/eveliobustosapache" className="text-[#FFD700] hover:text-[#E4405F] transition-colors transform hover:scale-125" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
         <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 2c1.66 0 3 1.34 3 3s-1.34 3-3 3a3 3 0 010-6zm4.5-.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
       </svg>
@@ -150,7 +202,7 @@ const ContactForm = () => {
           <div className="bg-[#1a1a1a] rounded-3xl shadow-xl p-8 md:p-12">
             <form onSubmit={handleSubmit} className="space-y-6">
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" />
+              <input type="hidden" name="_next" value="https://eveliobustosapache.com/thanks.html" />
 
               <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">Solicitar una Consulta.</h3>
 

@@ -1,0 +1,3 @@
+<?php
+// Update password placeholder
+?>

@@ -14,27 +14,27 @@ const initialTestimonials = [
     avatar: avatar1
   },
   {
-    quote: "Gracias a su equipo, la contabilidad de mi negocio es mucho más sencilla...",
+    quote: "Gracias a su equipo, la contabilidad de mi negocio es mucho más sencilla y transparente. Antes, el tema fiscal me generaba mucho estrés, pero ahora tengo la tranquilidad de que todo está en orden y bajo control. Siempre están disponibles para resolver cualquier duda, por pequeña que sea, y su paciencia y conocimiento son invaluables. ¡Recomiendo ampliamente sus servicios a todos los emprendedores!",
     author: "Carlos M. - Emprendedor",
     avatar: avatar2
   },
   {
-    quote: "Profesionalismo y eficiencia definen su trabajo...",
-    author: "Sofía P. - Directora Financiera",
+    quote: "Profesionalismo y eficiencia definen su trabajo. Nos ayudaron a regularizar nuestra situación fiscal en tiempo récord, evitando multas y complicaciones futuras. Su enfoque proactivo y su capacidad para anticipar problemas nos han brindado una seguridad que no habíamos encontrado en otros despachos. Un gran aliado para cualquier empresa que valore la seriedad y la efectividad en la gestión contable.",
+    author: "Sofía P. - Directora Financiera",   
     avatar: avatar3
   },
   {
-    quote: "La atención personalizada que recibimos de Evelio Bustos Apache es incomparable...",
+    quote: "La atención personalizada que recibimos de Evelio Bustos Apache es incomparable. Se toma el tiempo para entender nuestras necesidades específicas y nos ofrece soluciones a medida que realmente funcionan. Su equipo es sumamente competente y siempre están un paso adelante en las actualizaciones fiscales. Es un placer trabajar con profesionales de este calibre.",
     author: "Roberto L. - Gerente General",
     avatar: avatar4
   },
   {
-    quote: "Desde que confiamos nuestra contabilidad a este despacho...",
+    quote: "Desde que confiamos nuestra contabilidad a este despacho, hemos notado una mejora sustancial en la organización de nuestras finanzas. La comunicación es fluida y siempre nos mantienen informados de cualquier novedad. Su experiencia en revisoría fiscal nos ha dado una tranquilidad enorme. ¡Un servicio de primera que supera las expectativas!",
     author: "Laura V. - Dueña de PYME",
     avatar: avatar5
   },
   {
-    quote: "Lo que más valoro de Evelio Bustos Apache es su compromiso con la ética...",
+    quote: "Lo que más valoro de Evelio Bustos Apache es su compromiso con la ética y la transparencia. Nos han guiado en cada paso para asegurar que nuestras operaciones cumplan con todas las normativas, evitando cualquier riesgo. Su asesoría no solo es técnica, sino también estratégica, ayudándonos a tomar mejores decisiones financieras. ¡Un verdadero socio de negocios!",
     author: "Miguel A. - Inversionista",
     avatar: avatar6
   }

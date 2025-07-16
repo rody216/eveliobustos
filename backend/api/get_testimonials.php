@@ -1,0 +1,3 @@
+<?php
+// Get testimonials placeholder
+?>
