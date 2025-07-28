@@ -38,9 +38,9 @@ const ContactForm = () => {
 
     const text = await response.text();
 
-    if (response.ok) {
-      setStatus('¡Mensaje enviado con éxito!');
-      setFormData({ name: '', email: '', subject: '', service: '', message: '' });
+    if (response.ok && text.trim() === "success") {
+      // ✅ Redirigir a la página de agradecimiento
+      window.location.href = "/thanks.html";
     } else {
       setStatus(`Error: ${text}`);
     }
@@ -55,8 +55,8 @@ const ContactForm = () => {
     <section className="py-16 md:py-24 bg-black text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-[#FFD700] text-center mb-12">Contáctanos</h2>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start">
+          
           {/* Columna izquierda: Información de Contacto */}
           <div className="bg-[#1a1a1a] rounded-3xl shadow-xl p-8 md:p-12 grid gap-10">
             <div>
@@ -202,8 +202,7 @@ const ContactForm = () => {
           <div className="bg-[#1a1a1a] rounded-3xl shadow-xl p-8 md:p-12">
             <form onSubmit={handleSubmit} className="space-y-6">
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://eveliobustosapache.com/thanks.html" />
-
+              
               <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">Solicitar una Consulta.</h3>
 
               <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Tu nombre" required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]" />
