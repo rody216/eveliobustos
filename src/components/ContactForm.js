@@ -201,7 +201,8 @@ const ContactForm = () => {
           {/* Columna derecha: Formulario */}
           <div className="bg-[#1a1a1a] rounded-3xl shadow-xl p-8 md:p-12">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://tudominio.com/thanks.html" />
+
               
               <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">Solicitar una Consulta.</h3>
 
