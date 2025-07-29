@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    $to = "rody216@gmail.com";
+    $to = "contacto@eveliobustosapache.com";
     $subject = "Nuevo mensaje de contacto desde el sitio web";
     $headers = "From: $name <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
