@@ -4,7 +4,6 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
     service: '',
     message: ''
   });
@@ -24,38 +23,37 @@ const ContactForm = () => {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setStatus('Enviando...');
+    e.preventDefault();
+    setStatus('Enviando...');
 
-  const formElement = e.target;
-  const formDataToSend = new FormData(formElement);
+    const formElement = e.target;
+    const formDataToSend = new FormData(formElement);
 
-  try {
-    const response = await fetch("/sendmail.php", {
-      method: "POST",
-      body: formDataToSend
-    });
+    try {
+      const response = await fetch("/sendmail.php", {
+        method: "POST",
+        body: formDataToSend
+      });
 
-    const text = await response.text();
+      const text = await response.text();
 
-    if (response.ok && text.trim() === "success") {
-      // ✅ Redirigir a la página de agradecimiento
-      window.location.href = "/thanks.html";
-    } else {
-      setStatus(`Error: ${text}`);
+      if (response.ok && text.trim().toLowerCase() === "success") {
+        window.location.href = "/thanks.html";
+      } else {
+        setStatus(`Error: ${text}`);
+      }
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+      setStatus('Error al enviar el mensaje. Intenta de nuevo.');
     }
-  } catch (error) {
-    console.error('Error al enviar el formulario:', error);
-    setStatus('Error al enviar el mensaje. Intenta de nuevo.');
-  }
-};
-
+  };
 
   return (
     <section className="py-16 md:py-24 bg-black text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-[#FFD700] text-center mb-12">Contáctanos</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start">
+
           
           {/* Columna izquierda: Información de Contacto */}
           <div className="bg-[#1a1a1a] rounded-3xl shadow-xl p-8 md:p-12 grid gap-10">
@@ -198,34 +196,70 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* Columna derecha: Formulario */}
+         {/* Columna derecha: Formulario */}
           <div className="bg-[#1a1a1a] rounded-3xl shadow-xl p-8 md:p-12">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <input type="hidden" name="_next" value="https://eveliobustosapache.com/thanks.html" />
+            <form
+              action="/sendmail.php" // PHP que maneja el envío del formulario
+              method="POST"
+              className="space-y-6"
+            >
+              {/* Redirección automática a página de agradecimiento */}
+              <input
+                type="hidden"
+                name="_next"
+                value="https://eveliobustosapache.com/thanks.html"
+              />
 
-              
-              <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">Solicitar una Consulta.</h3>
+              <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">
+                Solicitar una Consulta.
+              </h3>
 
-              <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Tu nombre" required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]" />
+              {/* Campo Nombre */}
+              <input
+                type="text"
+                name="name"
+                placeholder="Tu nombre"
+                required
+                className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]"
+              />
 
-              <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="tu.correo@ejemplo.com" required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]" />
-             
-              <select name="service" value={formData.service} onChange={handleChange} required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]">
+              {/* Campo Email */}
+              <input
+                type="email"
+                name="email"
+                placeholder="tu.correo@ejemplo.com"
+                required
+                className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]"
+              />
+
+              {/* Selector de servicio */}
+              <select
+                name="service"
+                required
+                className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]"
+              >
                 <option value="" disabled>Seleccione un servicio</option>
-                {servicesOptions.map((s, i) => <option key={i} value={s}>{s}</option>)}
+                {servicesOptions.map((s, i) => (
+                  <option key={i} value={s}>{s}</option>
+                ))}
               </select>
 
-              <textarea name="message" value={formData.message} onChange={handleChange} rows="6" placeholder="Escribe tu mensaje aquí..." required className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700] resize-y" />
+              {/* Campo de mensaje */}
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+                className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700] resize-y"
+              />
 
-              <button type="submit" className="w-full bg-[#FFD700] text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white transition-all duration-300 transform hover:scale-105">
-                {status === 'Enviando...' ? 'Enviando...' : 'Enviar Mensaje'}
+              {/* Botón de envío */}
+              <button
+                type="submit"
+                className="w-full bg-[#FFD700] text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white transition-all duration-300 transform hover:scale-105"
+              >
+                Enviar Mensaje
               </button>
-
-              {status && status !== 'Enviando...' && (
-                <p className={`mt-4 text-center text-lg ${status.includes('éxito') ? 'text-green-400' : 'text-red-400'}`}>
-                  {status}
-                </p>
-              )}
             </form>
           </div>
         </div>
