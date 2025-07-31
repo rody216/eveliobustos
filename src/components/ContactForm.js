@@ -1,14 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    service: '',
-    message: ''
-  });
-  const [status, setStatus] = useState('');
-
   const servicesOptions = [
     "Asesoría Fiscal",
     "Contabilidad General",
@@ -17,36 +9,6 @@ const ContactForm = () => {
     "Revisoría Fiscal",
     "Constitución de Empresas"
   ];
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('Enviando...');
-
-    const formElement = e.target;
-    const formDataToSend = new FormData(formElement);
-
-    try {
-      const response = await fetch("/sendmail.php", {
-        method: "POST",
-        body: formDataToSend
-      });
-
-      const text = await response.text();
-
-      if (response.ok && text.trim().toLowerCase() === "success") {
-        window.location.href = "/thanks.html";
-      } else {
-        setStatus(`Error: ${text}`);
-      }
-    } catch (error) {
-      console.error('Error al enviar el formulario:', error);
-      setStatus('Error al enviar el mensaje. Intenta de nuevo.');
-    }
-  };
 
   return (
     <section className="py-16 md:py-24 bg-black text-white">
@@ -194,27 +156,21 @@ const ContactForm = () => {
 
 
             </div>
+
           </div>
+
 
          {/* Columna derecha: Formulario */}
           <div className="bg-[#1a1a1a] rounded-3xl shadow-xl p-8 md:p-12">
             <form
-              action="/sendmail.php" // PHP que maneja el envío del formulario
+              action="/sendmail.php"
               method="POST"
               className="space-y-6"
             >
-              {/* Redirección automática a página de agradecimiento */}
-              <input
-                type="hidden"
-                name="_next"
-                value="https://eveliobustosapache.com/thanks.html"
-              />
+              <input type="hidden" name="_next" value="https://eveliobustosapache.com/thanks.html" />
 
-              <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">
-                Solicitar una Consulta.
-              </h3>
+              <h3 className="text-3xl font-semibold text-[#FFD700] mb-6 -mt-4">Solicitar una Consulta.</h3>
 
-              {/* Campo Nombre */}
               <input
                 type="text"
                 name="name"
@@ -223,7 +179,6 @@ const ContactForm = () => {
                 className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]"
               />
 
-              {/* Campo Email */}
               <input
                 type="email"
                 name="email"
@@ -232,7 +187,6 @@ const ContactForm = () => {
                 className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700]"
               />
 
-              {/* Selector de servicio */}
               <select
                 name="service"
                 required
@@ -244,7 +198,6 @@ const ContactForm = () => {
                 ))}
               </select>
 
-              {/* Campo de mensaje */}
               <textarea
                 name="message"
                 rows="6"
@@ -253,7 +206,6 @@ const ContactForm = () => {
                 className="w-full px-5 py-3 border border-gray-700 rounded-xl bg-gray-800 text-white focus:ring-2 focus:ring-[#FFD700] resize-y"
               />
 
-              {/* Botón de envío */}
               <button
                 type="submit"
                 className="w-full bg-[#FFD700] text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white transition-all duration-300 transform hover:scale-105"
@@ -262,6 +214,7 @@ const ContactForm = () => {
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>
