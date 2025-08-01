@@ -2,7 +2,7 @@
   "name": "eveliobustos",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://rody216.github.io/eveliobustos",
+  "homepage": "https://eveliobustosapache.com/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
