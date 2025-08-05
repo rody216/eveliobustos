@@ -21,7 +21,7 @@ const services = [
   },
   {
     title: "Nóminas y Seguridad Social",
-    description: "Cálculo y procesamiento de nóminas, así como altas y bajas ante IMSS e INFONAVIT, asegurando el cumplimiento de la normativa laboral.",
+    description: "Gestión integral del cálculo y procesamiento de nómina, incluyendo la afiliación y desvinculación de personal ante EPS, ARL, fondos de pensiones y cajas de compensación, garantizando el estricto cumplimiento de la normativa laboral colombiana.",
     icon: (
       <svg className="w-12 h-12 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h-2a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2v11a2 2 0 01-2 2zM9 20H7a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2v11a2 2 0 01-2 2z"></path>
